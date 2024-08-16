@@ -4,6 +4,7 @@ pipeline {
  stage('Build') {
  steps {
  echo "build success" 
+ bat "mvn clean install"
  }
  }
  stage('Test') {
@@ -14,6 +15,6 @@ pipeline {
  }
  stage('Deploy Development') {
  steps {
- bat "mvn clean package deploy -DmuleVersion=4.4.0 -Dusername=enugushruthinewnew -Dpassword=Enugushruthi@1289 -DapplicationName=jenkinspipeline -Denvironment=Sandbox -Dworkers=1 -DworkerType=Micro -DmuleDeploy"
+ bat "mvn clean package deploy -DmuleVersion=4.4.0 -Dusername=enugushruthimm -Dpassword=Enugushruthi@2785 -DapplicationName=jenkinspipeline -Denvironment=Sandbox -Dworkers=1 -DworkerType=Micro -DmuleDeploy"
  echo "deploy success" 
 }}}}
