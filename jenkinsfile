@@ -15,6 +15,6 @@ pipeline {
  }
  stage('Deploy Development') {
  steps {
- bat "mvn clean package deploy -DmuleVersion=4.4.0 -Dusername=enugushruthimm -Dpassword=Enugushruthi@2785 -DapplicationName=jenkinspipeline -Denvironment=Sandbox -Dworkers=1 -DworkerType=Micro -DmuleDeploy"
+ bat "mvn clean package deploy -DmuleVersion=4.4.0 -Dusername=enugushruthimm -Dpassword=Enugushruthi@2785 -DapplicationName=jenkinspipeline1 -Denvironment=Sandbox -Dworkers=1 -DworkerType=Micro -DmuleDeploy"
  echo "deploy success" 
 }}}}
